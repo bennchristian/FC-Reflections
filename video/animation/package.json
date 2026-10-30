@@ -1,0 +1,42 @@
+{
+  "name": "fc-reflection-animation",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Animations for 'Why I'd say yes to FC again' (Remotion, 1920x1080 @ 30 fps)",
+  "type": "module",
+  "scripts": {
+    "cues": "node scripts/sync-cues.mjs",
+    "prestudio": "node scripts/sync-cues.mjs",
+    "studio": "remotion studio",
+    "check": "node scripts/sync-cues.mjs && node scripts/check.mjs && tsc --noEmit",
+    "timeline": "node scripts/sync-cues.mjs && node scripts/timeline.mjs",
+    "prerender": "node scripts/sync-cues.mjs",
+    "render": "remotion render FCReflection ../out/FC_Reflection_v1.mp4 --codec=h264 --audio-codec=aac",
+    "render:silent": "remotion render FCReflection out/fc-reflection-silent.mp4 --muted",
+    "prerender:silent": "node scripts/sync-cues.mjs",
+    "stills": "node scripts/sync-cues.mjs && node scripts/stills.mjs",
+    "music:measure": "node scripts/music-measure.mjs"
+  },
+  "dependencies": {
+    "@fontsource/caveat": "5.3.0",
+    "@fontsource/courier-prime": "5.3.0",
+    "@fontsource/geist": "5.3.0",
+    "@fontsource/instrument-serif": "5.3.0",
+    "@fontsource/inter": "5.3.0",
+    "@fontsource/literata": "5.3.0",
+    "@fontsource/newsreader": "5.3.0",
+    "@fontsource/permanent-marker": "5.3.0",
+    "@remotion/bundler": "4.0.539",
+    "@remotion/cli": "4.0.539",
+    "@remotion/noise": "4.0.539",
+    "@remotion/paths": "4.0.539",
+    "@remotion/renderer": "4.0.539",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "remotion": "4.0.539"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.12",
+    "typescript": "5.9.2"
+  }
+}

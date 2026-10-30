@@ -1,0 +1,280 @@
+{
+  "_readme": "Every swappable asset in the video. To swap: drop the file in video/assets/, set its 'file' (path relative to video/assets/) or 'value', and set status to 'ready'. Status: ready = real asset in use; placeholder = stand-in drawn by the animation; confirm = filled in but needs the user's OK; not available = deliberately using the drawn fallback. Screenshots may carry an optional crop {x, y, w} (fractions of the image). Only 'ready' (or 'confirm') entries are used; placeholders render as clearly labelled slots.",
+  "slots": {
+    "owner.name": {
+      "status": "ready",
+      "value": "Bennett Christian",
+      "rows": [
+        "0.5",
+        "6"
+      ],
+      "need": "Your name as it should appear on the title and end cards.",
+      "source": "Confirmed by the user, 2026-10-30."
+    },
+    "fellowship.dates": {
+      "status": "ready",
+      "value": "8 Sep – 31 Oct 2026",
+      "rows": [
+        "0.5",
+        "6"
+      ],
+      "need": "Fellowship start and end dates, e.g. 'Sep – Oct 2026'.",
+      "source": "From the user: start 8 September, end 31 October (2026)."
+    },
+    "fc.logo": {
+      "status": "ready",
+      "file": "fc-logo-mark.png",
+      "rows": [
+        "0.5",
+        "6"
+      ],
+      "need": "Frontier Commons logo, transparent PNG or SVG.",
+      "source": "Frontier Commons mark, https://frontiercommons.org/favicon.png (512x512, navy on transparent), the official site linked in the FC onboarding guide. Downloaded 2026-10-30."
+    },
+    "arise.logo": {
+      "status": "ready",
+      "file": "arise-asia-logo.webp",
+      "rows": [
+        "1b"
+      ],
+      "source": "Supplied by the user."
+    },
+    "pgb.screenshot": {
+      "status": "ready",
+      "file": "pgb-list-filters.png",
+      "crop": {
+        "x": 0.125,
+        "y": 0,
+        "w": 0.75
+      },
+      "rows": [
+        "2b",
+        "2e",
+        "4b",
+        "5b"
+      ],
+      "source": "Captured 2026-10-30 from https://fc-iota-sandy.vercel.app/?view=groups (headless Chrome, 1920x1200 @1.5x = 2880x1800). Public data only."
+    },
+    "pgb.brand": {
+      "status": "ready",
+      "value": {
+        "name": "People Group Browser",
+        "bg": "#f4f4f4",
+        "fg": "#222222",
+        "accent": "#1a5fb4",
+        "accent2": "#22aa66",
+        "font": "system-ui, -apple-system, 'Inter', sans-serif"
+      },
+      "rows": [
+        "2b",
+        "2e"
+      ],
+      "source": "Read from the live app's computed styles (body bg, text, link blue, 'Add to shortlist' green, system-ui font)."
+    },
+    "known.screenshot": {
+      "status": "ready",
+      "file": "known-home.png",
+      "crop": {
+        "x": 0.02,
+        "y": 0,
+        "w": 0.47
+      },
+      "rows": [
+        "2d",
+        "2e",
+        "4b",
+        "5b"
+      ],
+      "source": "Captured 2026-10-30 from https://known-prototype-sigma.vercel.app/ after choosing English (headless Chrome 1280x800 @2x = 2560x1600). The crop keeps the phone view and leaves out the Judge panel."
+    },
+    "known.logo": {
+      "status": "placeholder",
+      "file": null,
+      "rows": [
+        "2d",
+        "2e"
+      ],
+      "need": "Optional: KNOWN logo. Without it the bar shows the name in Literata."
+    },
+    "known.brand": {
+      "status": "ready",
+      "value": {
+        "name": "KNOWN",
+        "bg": "#20253a",
+        "fg": "#ede6d8",
+        "accent": "#f2b35e",
+        "accent2": "#ede6d8",
+        "font": "'Literata', Georgia, serif",
+        "bar": "#20253a",
+        "barText": "#ede6d8",
+        "weight": 600
+      },
+      "rows": [
+        "2d",
+        "2e"
+      ],
+      "source": "Read from the live app (body background, text colour, Begin button gold, Literata headings)."
+    },
+    "known.feature": {
+      "status": "placeholder",
+      "value": null,
+      "rows": [
+        "2e"
+      ],
+      "need": "One KNOWN feature to call out in 2e (<= 5 words). Still needed from the user."
+    },
+    "livingletter.screenshot": {
+      "status": "ready",
+      "file": "livingletter-hero.png",
+      "rows": [
+        "2d",
+        "2e",
+        "4b",
+        "5b"
+      ],
+      "source": "Page 2 (hero letter) of the user's 'Living Letter brand guide.pdf', rendered at 2400x1350. A fresh browser on the live app only shows the sign-in page."
+    },
+    "livingletter.feature_screenshot": {
+      "status": "ready",
+      "file": "livingletter-review.png",
+      "rows": [
+        "2e"
+      ],
+      "source": "Page 5 ('Submit a letter for review' with SEND FOR REVIEW) of the brand guide, 2400x1350. Cross-fades in on the 2e callout."
+    },
+    "livingletter.logo": {
+      "status": "ready",
+      "file": "livingletter-logo-cream.png",
+      "rows": [
+        "2d",
+        "2e"
+      ],
+      "source": "Cream wordmark from the Living Letter project (FC-Final-Project/artifact/src/img/logo-cream.png)."
+    },
+    "livingletter.brand": {
+      "status": "ready",
+      "value": {
+        "name": "Living Letter",
+        "bg": "#fefaf4",
+        "fg": "#200b08",
+        "accent": "#891f1b",
+        "accent2": "#c7d0d8",
+        "font": "'Instrument Serif', Georgia, serif",
+        "bar": "#891f1b",
+        "barText": "#fefaf4",
+        "weight": 400
+      },
+      "rows": [
+        "2d",
+        "2e"
+      ],
+      "source": "Swatches sampled from page 1 of the brand guide (cream #fefaf4, red #891f1b, pale #c7d0d8, slate #5c6277, ink #200b08); font Instrument Serif per the user."
+    },
+    "livingletter.feature": {
+      "status": "ready",
+      "value": "post sent for review",
+      "rows": [
+        "2e"
+      ],
+      "source": "From the user: 'Living Letter post being sent for review'."
+    },
+    "cadgy.screenshot": {
+      "status": "ready",
+      "file": "cadgy-daily.jpg",
+      "crop": {
+        "x": 0,
+        "y": 0.335,
+        "w": 1
+      },
+      "rows": [
+        "2e",
+        "4b",
+        "5b"
+      ],
+      "source": "Supplied by the user (Desktop/Cadgy-Clone-Screenshot.jpg, 777x1280, Daily 2026-10-22). Cropped to the tile grid."
+    },
+    "cadgy.brand": {
+      "status": "ready",
+      "value": {
+        "name": "C A D G Y",
+        "bg": "#161616",
+        "fg": "#ededed",
+        "accent": "#fbb923",
+        "accent2": "#eddba9",
+        "font": "'Geist', 'Inter', sans-serif",
+        "bar": "#161616",
+        "barText": "#ededed",
+        "weight": 700
+      },
+      "rows": [
+        "2e"
+      ],
+      "source": "Live app https://fc-bootcamp.vercel.app/ (background, text, amber link colour, Geist) plus the tile colour from the screenshot."
+    },
+    "portfolio.screenshot": {
+      "status": "ready",
+      "file": "portfolio-home.png",
+      "crop": {
+        "x": 0.25,
+        "y": 0,
+        "w": 0.5
+      },
+      "rows": [
+        "2e",
+        "4b",
+        "5b"
+      ],
+      "source": "Captured 2026-10-30 from https://bennett-christian-portfolio.vercel.app/ (headless Chrome 1600x1000 @1.5x = 2400x1500), cropped to the content column."
+    },
+    "portfolio.brand": {
+      "status": "ready",
+      "value": {
+        "name": "Bennett Christian",
+        "bg": "#faf7f2",
+        "fg": "#1c1b19",
+        "accent": "#9a3412",
+        "accent2": "#5f5a52",
+        "font": "'Newsreader', Georgia, serif",
+        "bar": "#9a3412",
+        "barText": "#faf7f2",
+        "weight": 600
+      },
+      "rows": [
+        "2e"
+      ],
+      "source": "Read from the live site (background, text, rust link colour, Newsreader headings)."
+    },
+    "community.photo": {
+      "status": "not available",
+      "file": null,
+      "optional": true,
+      "rows": [
+        "2f",
+        "5b"
+      ],
+      "need": "The user has no cohort photo; the hand-drawn ring of people is the final version."
+    },
+    "music.bed": {
+      "status": "placeholder",
+      "file": null,
+      "value": {
+        "lufs": null,
+        "underVoDb": -19,
+        "holdDb": -5,
+        "hits": {
+          "M1": null,
+          "M2": null,
+          "M3": null
+        }
+      },
+      "rows": [
+        "all"
+      ],
+      "need": "Bed track: warm, hopeful acoustic/piano, soft percussion, ~90-110 BPM, >= 2:40 long, royalty-free and cleared for this use. Put it in video/assets/music/, set 'file' (e.g. 'music/bed.mp3') and status 'ready'. Settings in 'value': lufs = the track's integrated loudness (npm run music:measure prints it; null assumes -14); underVoDb / holdDb = music loudness relative to the VO while it speaks / in the three no-VO holds; hits.M1-M3 = optional time (s) in the track of a beat drop / swell / final chord to land on that hold (the track is spliced under the VO before each hold to make it land). Without a ready file the video renders without music. Read by src/Soundtrack.tsx."
+    }
+  },
+  "generated": {
+    "_note": "Everything else on screen is drawn procedurally in src/kit (paper grain via SVG feTurbulence, tape, pins, paperclip, stamps, marker and pencil strokes, the thread, all doodles). No third-party images are used.",
+    "fonts": "Caveat, Courier Prime, Inter (OFL 1.1) and Permanent Marker (Apache 2.0) for the scrapbook; project brand fonts Instrument Serif, Literata, Geist, Newsreader (all OFL 1.1). All bundled from npm @fontsource packages."
+  }
+}
