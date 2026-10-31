@@ -44,6 +44,8 @@ npm run render
 
 `npm run render:silent` renders the picture alone to `out/fc-reflection-silent.mp4`.
 
+A full render takes about 40 minutes. `remotion.config.ts` sets concurrency to 1 on purpose: on an 8 GB Mac, parallel tabs ran Chrome out of memory and produced corrupt frames (the page drawn tiled) in the 2e showcase. Pass `--concurrency=4` only on a machine with plenty of free RAM, then check the result for single-frame glitches.
+
 To preview part of it, render a frame range at half size:
 
 ```bash
@@ -147,6 +149,7 @@ Screenshots can carry an optional `crop` `{x, y, w}`, given as fractions of the 
 - **Captured on 2026-10-30 from your public apps:**
   - `pgb-list-filters.png`: the People Group Browser list and filters, from `https://fc-iota-sandy.vercel.app/?view=groups`
   - `known-home.png`: from `https://known-prototype-sigma.vercel.app/`, after choosing English
+  - `known-pictures-wide.png`: the screen after **Begin** ("Which picture feels closest today?"), set onto a landscape canvas in the app's own background colour
   - `portfolio-home.png`: from `https://bennett-christian-portfolio.vercel.app/`
 
   The manifest records the colours read from each app.

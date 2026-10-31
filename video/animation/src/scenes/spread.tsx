@@ -44,7 +44,7 @@ export const Spread: React.FC<SpreadState> = (s) => {
   return (
     <>
       <Drop at={s.knownAt} x={known.x} y={known.y} w={BIG.w * sc} h={BIG.h * sc} rotate={known.rot} attach="tape2" seed="known">
-        <ProjectClipping project="known" w={BIG.w * sc} h={BIG.h * sc} />
+        <ProjectClipping project="known" w={BIG.w * sc} h={BIG.h * sc} alt={interpolate(s.callouts, [0.05, 0.4], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})} />
       </Drop>
       <Drop at={s.llAt} x={ll.x} y={ll.y} w={BIG.w * sc} h={BIG.h * sc} rotate={ll.rot} attach="pin" seed="ll">
         <ProjectClipping project="livingletter" w={BIG.w * sc} h={BIG.h * sc} alt={interpolate(s.callouts, [0.05, 0.4], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})} />

@@ -6,8 +6,9 @@ import {Config} from '@remotion/cli/config';
 Config.setPublicDir('../assets');
 Config.setVideoImageFormat('jpeg');
 Config.setOverwriteOutput(true);
-// The 2e showcase spread (five screenshots plus frozen scenes) is heavy: with
-// 4 tabs at once Chrome ran out of memory on an 8 GB Mac, and frames could
-// exceed the 30 s default. Override with --concurrency on a bigger machine.
-Config.setConcurrency(2);
+// Render one frame at a time. On an 8 GB Mac, parallel tabs ran Chrome out of
+// memory: 4 tabs crashed in the 2e showcase spread, and 2 tabs produced ~40
+// corrupt frames (the page drawn tiled at the wrong scale). The longer timeout
+// covers the heaviest 2e frames.
+Config.setConcurrency(1);
 Config.setDelayRenderTimeoutInMilliseconds(120000);

@@ -116,12 +116,20 @@
       "source": "Read from the live app (body background, text colour, Begin button gold, Literata headings)."
     },
     "known.feature": {
-      "status": "placeholder",
-      "value": null,
+      "status": "ready",
+      "value": "which picture feels closest?",
       "rows": [
         "2e"
       ],
-      "need": "One KNOWN feature to call out in 2e (<= 5 words). Still needed from the user."
+      "source": "The user chose KNOWN's four-pictures screen; the label is that screen's own question ('Which picture feels closest today?')."
+    },
+    "known.feature_screenshot": {
+      "status": "ready",
+      "file": "known-pictures-wide.png",
+      "rows": [
+        "2e"
+      ],
+      "source": "Captured 2026-10-30 from https://known-prototype-sigma.vercel.app/ (English → Begin), 2560x1600; the phone's question and four pictures recomposed onto a 2400x1350 canvas in the page's own background colour. Cross-fades in on the 2e callout."
     },
     "livingletter.screenshot": {
       "status": "ready",
